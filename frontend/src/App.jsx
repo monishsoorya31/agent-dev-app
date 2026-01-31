@@ -8,7 +8,7 @@ import { ExpenseProvider } from './context/ExpenseContext';
 function App() {
     return (
         <ExpenseProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/agent-dev-app">
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Dashboard />} />
